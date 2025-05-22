@@ -1,35 +1,92 @@
-
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    font-weight: 600;
-    position: sticky;
-    font-family: IBM Plex Mono, monospace;
-    z-index: 50;
-    top: 0;
-    box-sizing: border-box;
-    width: 100%;
-    padding-top: 1.444rem;
-    padding-bottom: 1rem;
-    transition: all .2s ease-in-out;
-}
-
-
 body {
     font-family: IBM Plex Mono, monospace;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f5f5f5;
-    color: #333;
+    font-weight: 400;
+    background-color: #212121;
+    overflow-x: hidden ;
 }
+
+header {
+    background-color: #313337;
+    font-weight: 600;
+    font-family: IBM Plex Mono, monospace;
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #4cbc19;
+    text-decoration: underline;
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #212121;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: calc(100vh - 65px);
+    /* border-radius: 8px;
+    border: 3px solid white; */
+}
+
+.text-inicio{
+    margin: 0;
+}
+.hola-mundo{
+    text-align: left;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.bienvenida{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.soy{
+    text-align: right;
+    font-size: 30px;
+    font-weight: 100;
+    transition: color 0.4s ease-in-out;
+    margin-left: 200px;
+    line-height:2;
+}
+
+.soy:hover{
+    color:#4cbc19 ;
+
+}
+
+.imagen{
+    border-radius: 500px;
+    height: 300px;
+    display: flex;
+    margin-left: 100px;
+}
+
 
 
 section {
-    margin: 20px;
-    padding: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -39,7 +96,7 @@ footer {
     background-color: #333;
     color: white;
     padding: 10px;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
     font-size: 14px;
