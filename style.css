@@ -106,9 +106,36 @@ header {
 
 ul {
     list-style: none;
-    padding: 0; 
-    margin: 0; 
+    padding: 0;
+    margin: 0;
 }
+
+.proyectos{
+    background-color: #212121;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project{
+    text-align: center;
+    width: 30%;
+    border: solid #F2F2F2 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.proj-img{
+    height: 120px;
+}
+
 
 section {
     background: #313337;
@@ -117,12 +144,37 @@ section {
     color: white;
 }
 
+h1{
+    font-size: 30px;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover{
+    color:#4cbc19 ;
+
+}
+
+.social{
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.contacto{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
 footer {
-    background-color: #333;
     color: white;
-    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: #313337;
     /* position: fixed; */
-    width: 100%;
+    /* width: 100%;
     bottom: 0;
-    font-size: 14px;
+    font-size: 14px; */
 }
