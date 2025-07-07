@@ -1,10 +1,36 @@
+/* === GLOBAL === */
 body {
     font-family: IBM Plex Mono, monospace;
     font-weight: 400;
     background-color: #212121;
-    overflow-x: hidden ;
+    overflow-x: hidden;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    background: #313337;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin: 40px 0;
+    padding: 32px 10px;
+}
+
+h1 {
+    font-size: 30px;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #4cbc19;
+}
+
+/* === HEADER & NAV === */
 header {
     background-color: #313337;
     align-items: center;
@@ -18,7 +44,6 @@ header {
 }
 
 .navbar ul {
-    list-style: none;
     display: flex;
     gap: 10px;
 }
@@ -36,73 +61,95 @@ header {
     text-decoration: underline;
 }
 
+/* === INICIO === */
 .inicio {
+    width: 100%;
+    min-height: calc(100vh - 65px);
+    box-sizing: border-box;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+    padding: 40px;
     background: #212121;
     color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: calc(100vh - 65px);
-    /* border-radius: 8px;
-    border: 3px solid white; */
 }
 
-.text-inicio{
+.text-inicio {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
     margin: 0;
 }
 
-.hola-mundo{
+.hola-mundo {
     text-align: left;
     font-size: 40px;
     font-weight: 1000;
 }
 
-.bienvenida{
+.bienvenida {
     text-align: center;
     font-size: 34px;
     font-weight: 700;
 }
 
-.soy{
+.soy {
     text-align: right;
     font-size: 30px;
     font-weight: 100;
     transition: color 0.4s ease-in-out;
-    margin-left: 200px;
-    line-height:2;
+    line-height: 2;
 }
 
-.soy:hover{
-    color:#4cbc19 ;
-
+.soy:hover {
+    color: #4cbc19;
 }
 
-.imagen{
-    border-radius: 500px;
+.imagen {
+    width: 300px;
     height: 300px;
-    display: flex;
-    margin-left: 100px;
+    border-radius: 500px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-left: 0;
+    display: block;
 }
 
-.sobre-mi{
+/* === SOBRE MÍ === */
+.sobre-mi {
+    width: 100%;
+    min-height: calc(100vh - 65px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.mi-espacio{
+.mi-espacio {
     justify-content: center;
     padding: 20px;
 }
 
-.mi-text{
+.mi-espacio > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 32px;
+}
+
+.mi-text {
     font-size: 20px;
     font-weight: 500;
 }
 
-.stack{
+.stack {
     height: 90px;
-    margin: 16px 16px 0 0; /* Espaciado entre logos */
+    margin: 16px 16px 0 0;
     transition: transform 0.2s;
 }
 
@@ -110,28 +157,19 @@ header {
     margin-right: 0;
 }
 
-.mi-espacio > div {
+/* === PROYECTOS === */
+.proyectos {
+    width: 100%;
+    min-height: calc(100vh - 65px);
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px 32px; /* Espaciado vertical y horizontal */
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.proyectos{
-    background-color: #212121;
-    display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background-color: #212121;
 }
 
-.contenedor{
+.contenedor {
     width: 100%;
     max-width: 1100px;
     display: flex;
@@ -140,7 +178,7 @@ ul {
     gap: 32px;
 }
 
-.project{
+.project {
     color: white;
     text-align: center;
     width: 320px;
@@ -152,36 +190,12 @@ ul {
     text-decoration: none;
 }
 
-.proj-img{
+.proj-img {
     height: 120px;
 }
 
-section {
-    background: #313337;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    color: white;
-    margin: 40px 0;
-    padding: 32px 10px;
-}
-
-h1{
-    font-size: 30px;
-    transition: color 0.3s ease-in-out;
-}
-
-h1:hover{
-    color:#4cbc19 ;
-
-}
-
-.social{
-    height: 60px;
-    background-color: #F2F2F2;
-    border-radius: 10px;
-}
-
-.contacto{
+/* === CONTACTO & FOOTER === */
+.contacto {
     width: 100%;
     max-width: 400px;
     gap: 24px;
@@ -200,12 +214,13 @@ footer {
     padding: 50px 10px;
 }
 
-/* Hover para todos los textos */
-p:hover, li:hover, .mi-text:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, a:hover {
-    color: #4cbc19 !important;
-    transition: color 0.3s;
+.social {
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
 }
 
+/* === BOTÓN TO TOP === */
 #toTopBtn {
     position: fixed;
     right: 32px;
@@ -223,25 +238,35 @@ p:hover, li:hover, .mi-text:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:ho
     opacity: 0.85;
     transition: background 0.2s, color 0.2s, opacity 0.2s;
 }
+
 #toTopBtn:hover {
     background: #4cbc19;
     color: #212121;
     opacity: 1;
 }
-.inicio,
-.sobre-mi,
-.proyectos {
-    width: 100%;
-    min-height: calc(100vh - 65px);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+/* === HOVER GENERAL === */
+p:hover,
+li:hover,
+.mi-text:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+a:hover {
+    color: #4cbc19 !important;
+    transition: color 0.3s;
 }
 
+/* === RESPONSIVE === */
 @media (max-width: 900px) {
-    .inicio,
+    .inicio {
+        flex-direction: column;
+        height: auto;
+        padding: 32px 0;
+    }
+
     .sobre-mi,
     .proyectos {
         min-height: unset;
@@ -256,36 +281,45 @@ p:hover, li:hover, .mi-text:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:ho
         padding: 10px 18px;
         font-size: 16px;
     }
+
     .navbar ul {
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
     }
+
     section {
         padding: 16px 2vw;
         margin: 24px 0;
     }
+
     .mi-espacio {
         padding: 16px 0;
         margin-bottom: 16px;
     }
+
     .stack {
         height: 60px;
         margin: 8px 8px 0 0;
     }
+
     .proj-img {
         height: 80px;
     }
+
     h1 {
         font-size: 22px;
     }
+
     .mi-text {
         font-size: 16px;
     }
+
     .contacto {
         max-width: 100vw;
         gap: 12px;
     }
+
     footer {
         padding: 24px 2vw;
     }

@@ -40,12 +40,11 @@
         </div>
 
         <div class="mi-espacio" id="aptitudes">
-            <h1>Mi stack tecnologico</h1>
+            <h1>Mi Stack</h1>
             <div>
                 <img src="https://images.icon-icons.com/2415/PNG/512/c_plain_logo_icon_146610.png" class="stack" alt="Logo de lenguaje C">
                 <img src="https://www.horuss.com.mx/wp-content/uploads/2019/04/c.png" class="stack" alt="Logo de lenguaje C#">
                 <img src="https://img.icons8.com/?size=512&id=laYYF3dV0Iew&format=png" class="stack" alt="Logo de Python">
-                <!-- Mejor usar CSS para separación en vez de <br> -->
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/2048px-Microsoft_Azure.svg.png" class="stack" alt="Logo de Microsoft Azure">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/800px-Microsoft_.NET_logo.svg.png" class="stack" alt="Logo de .NET">
                 <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" class="stack" alt="Logo de Docker">
@@ -100,20 +99,5 @@
         </div>
         <button id="toTopBtn" title="Volver arriba">⬆ Volver arriba</button>
     </footer>
-    <script>
-        // Botón volver arriba
-        const toTopBtn = document.getElementById('toTopBtn');
-        window.onscroll = function() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                toTopBtn.style.display = "block";
-            } else {
-                toTopBtn.style.display = "none";
-            }
-        };
-        toTopBtn.onclick = function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
-        toTopBtn.style.display = "none";
-    </script>
 </body>
 </html>
