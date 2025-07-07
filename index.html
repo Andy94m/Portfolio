@@ -14,14 +14,13 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#aptitudes">Aptitudes</a></li>
-                <li><a href="#formacion">Formación</a></li>
+                <!-- <li><a href="#aptitudes">Aptitudes</a></li>
+                <li><a href="#formacion">Formación</a></li> -->
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
 
     <section class="inicio">
         <div class="text-inicio">
@@ -30,79 +29,91 @@
             <p class="soy">Soy Andrés Montes developer .NET</p>
         </div>
         <div>
-            <img class="imagen" src="https://img.freepik.com/vector-gratis/lindo-zorro-sentado-corbata-dibujos-animados-vector-icono-ilustracion-animal-negocio-icono-concepto-aislado_138676-9065.jpg" alt="Andy Montes">
-
+            <img class="imagen" src="https://img.freepik.com/vector-gratis/lindo-zorro-sentado-corbata-dibujos-animados-vector-icono-ilustracion-animal-negocio-icono-concepto-aislado_138676-9065.jpg" alt="Ilustración de zorro con corbata, avatar de Andy Montes">
         </div>
     </section>
 
-    <section class="sobre-mi">
+    <section class="sobre-mi" id="sobre-mi">
         <div class="mi-espacio">
             <h1>Sobre mí</h1>
-            <p class="mi-text">Hola, soy Andrés. Me considero un apasionado del desarrollo y la tecnología. <br>Actualmente trabajo en sistemas como soporte y analista de aplicaciones.  <br> Me recibí como tecnico en programación en la UTN y tambien realicé varios cursos extra. <br> En mi tiempo libre me gusta jugar videojuegos de estrategia, hacer deporte y tambien soy musico!  </p>
+            <p class="mi-text">Hola, soy Andrés. Me considero un apasionado del desarrollo y la tecnología. <br>Actualmente trabajo en sistemas como soporte y analista de aplicaciones.  <br> Me recibí como tecnico en programación en la UTN y tambien realicé varios cursos extra. <br> Me formé en la tecnicatura aprendiendo con C, Python y Java, <br> sin embargo trabajo con el ecosistema Microsoft y me estoy orientando a .NET. <br> En mi tiempo libre me gusta jugar videojuegos de estrategia, hacer deporte y tambien soy musico!  </p>
         </div>
 
-        <div class="mi-espacio">
+        <div class="mi-espacio" id="aptitudes">
             <h1>Mi stack tecnologico</h1>
-            <div >
-                <img src="https://images.icon-icons.com/2415/PNG/512/c_plain_logo_icon_146610.png" class="stack" alt="">
-                <img src="https://www.horuss.com.mx/wp-content/uploads/2019/04/c.png" class="stack" alt="">
-                <img src="https://img.icons8.com/?size=512&id=laYYF3dV0Iew&format=png" class="stack" alt="">
-                <br>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/2048px-Microsoft_Azure.svg.png" class="stack" alt="">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/800px-Microsoft_.NET_logo.svg.png" class="stack" alt="">
-                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" class="stack" alt="">
+            <div>
+                <img src="https://images.icon-icons.com/2415/PNG/512/c_plain_logo_icon_146610.png" class="stack" alt="Logo de lenguaje C">
+                <img src="https://www.horuss.com.mx/wp-content/uploads/2019/04/c.png" class="stack" alt="Logo de lenguaje C#">
+                <img src="https://img.icons8.com/?size=512&id=laYYF3dV0Iew&format=png" class="stack" alt="Logo de Python">
+                <!-- Mejor usar CSS para separación en vez de <br> -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/2048px-Microsoft_Azure.svg.png" class="stack" alt="Logo de Microsoft Azure">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/800px-Microsoft_.NET_logo.svg.png" class="stack" alt="Logo de .NET">
+                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" class="stack" alt="Logo de Docker">
             </div>
         </div>
 
-        <div class="mi-espacio">
+        <div class="mi-espacio" id="formacion">
             <h1>Formación</h1>
             <ul class="mi-text">
                 <li>Tecnicatura Universitaria en Programación - UTN</li>
                 <li>C# Nivel 1; 2 y 3 - Maxiprograma</li>
                 <li>Base de Datos - Maxiprograma</li>
-                <li>Seguridad Informatica - Educación IT</li>
+                <li>Ciberseguridad - Educación IT</li>
             </ul>
         </div>
-        <br>
     </section>
 
-    <section class="proyectos">
+    <section class="proyectos" id="proyectos">
         <h1>Mis proyectos</h1>
         <div class="contenedor">
             <a href="https://github.com/Andy94m/Curso-C-Nivel-2/tree/main" target="_blank" class="project">
                 <h2>Gestión de inventario</h2>
-                <img src="https://i.imgur.com/jndhs8P.png" class="proj-img" alt="">
+                <img src="https://i.imgur.com/jndhs8P.png" class="proj-img" alt="Captura de pantalla de Gestión de inventario">
                 <p class="mi-text">Gestión de inventario en grilla. Contiene CRUD, búsquedas, filtrado y ordenamiento de elementos. También papelera de reciclaje. Hecho en WinForms.</p>
             </a>
-
             <a href="https://github.com/CodeSystem2022/ProyectoIntegradorFunkTheCode" target="_blank" class="project">
                 <h2>Tienda ItuiPhone</h2>
-                <img src="https://i.imgur.com/1kC01Fb.png" class="proj-img" alt="">
+                <img src="https://i.imgur.com/1kC01Fb.png" class="proj-img" alt="Captura de pantalla de Tienda ItuiPhone">
                 <p class="mi-text">Tienda en linea desarrollada como proyecto integrador Web en la UTN. <br> Stack: Javascript, CSS - Tailwind, NodeJS - Express y MongoDB </p>
             </a>
-
             <a href="https://github.com/Andy94m/Autoclick" target="_blank" class="project">
                 <h2>Autoclick</h2>
-                <img src="https://i.imgur.com/DpFZ0wa.png" class="proj-img" alt="">
+                <img src="https://i.imgur.com/DpFZ0wa.png" class="proj-img" alt="Captura de pantalla de Autoclick">
                 <p class="mi-text">Autoclick portable de escritorio. Perfecto para mantener servidores, VDI o accesos remotos en uso y evitar el cierre de sesión.</p>
             </a>
         </div>
     </section>
 
-    <footer>
+    <footer id="contacto">
         <h1>Contactame</h1>
         <p class="mi-text">m.andresmontes@gmail.com  -  andresmontes.m@outlook.es</p>
         <div class="contacto">
             <a href="https://www.linkedin.com/in/andres-montes-32602019a/" target="_blank">
-                            <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-linkedin-icon-png-image_3547995.jpg" class="social" alt="">
+                <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-linkedin-icon-png-image_3547995.jpg" class="social" alt="LinkedIn de Andrés Montes">
             </a><hr>
             <a href="https://andy94m.github.io/Portfolio/" target="_blank">
-                            <img src="https://pngdownload.io/wp-content/uploads/2023/12/X-Logo-Twitter-Logo-Iconic-Social-Media-Brand-Symbol-PNG-Transparent-Recognizable-Emblem-jpg.webp" class="social" alt="">
+                <img src="https://pngdownload.io/wp-content/uploads/2023/12/X-Logo-Twitter-Logo-Iconic-Social-Media-Brand-Symbol-PNG-Transparent-Recognizable-Emblem-jpg.webp" class="social" alt="Perfil X (Twitter) de Andrés Montes">
             </a><hr>
             <a href="https://github.com/Andy94m" target="_blank">
-                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="social" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="social" alt="GitHub de Andrés Montes">
             </a>
         </div>
+        <button id="toTopBtn" title="Volver arriba">⬆ Volver arriba</button>
     </footer>
+    <script>
+        // Botón volver arriba
+        const toTopBtn = document.getElementById('toTopBtn');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                toTopBtn.style.display = "block";
+            } else {
+                toTopBtn.style.display = "none";
+            }
+        };
+        toTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        toTopBtn.style.display = "none";
+    </script>
 </body>
 </html>
