@@ -1,8 +1,8 @@
 :root {
-  --bg-dark: #212121;
-  --bg-section: #313337;
-  --accent: #4cbc19;
-  --text: #ffffff;
+  --bg-dark: #0a0a0a;
+  --bg-section: #0f0f0f;
+  --accent: #00ff41;
+  --text: #e0e0e0;
   --text-light: #f2f2f2;
   --radius: 8px;
   --radius-lg: 10px;
@@ -25,6 +25,21 @@ body {
   overflow-x: hidden;
 }
 
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.06) 2px,
+    rgba(0, 0, 0, 0.06) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -39,6 +54,7 @@ a {
 h1 {
   font-size: 30px;
   transition: color var(--transition);
+  text-shadow: 0 0 7px var(--accent);
 }
 
 h1:hover {
@@ -46,7 +62,7 @@ h1:hover {
 }
 
 header {
-  background-color: rgba(49, 51, 55, 0.85);
+  background-color: rgba(15, 15, 15, 0.85);
   display: flex;
   align-items: center;
   width: 100%;
@@ -54,11 +70,12 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid rgba(0, 255, 65, 0.15);
   transition: background-color var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
 }
 
 .header-scrolled {
-  background-color: rgba(49, 51, 55, 0.95);
+  background-color: rgba(15, 15, 15, 0.95);
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
@@ -70,9 +87,15 @@ header {
 
 .navbar a {
   color: var(--text);
-  font-weight: 600;
+  font-weight: 400;
   padding: 10px 20px;
   transition: color var(--transition);
+}
+
+.navbar a::before {
+  content: '> ';
+  color: var(--accent);
+  opacity: 0.5;
 }
 
 .navbar a:hover {
@@ -148,7 +171,6 @@ section {
 .particles-down span {
   position: absolute;
   background: var(--accent);
-  border-radius: 50%;
   opacity: 0;
   animation: float linear infinite;
 }
@@ -169,12 +191,14 @@ section {
   font-size: 40px;
   font-weight: 900;
   min-height: 1.2em;
+  text-shadow: 0 0 10px var(--accent);
 }
 
 .typing-cursor::after {
   content: '|';
   color: var(--accent);
-  animation: blink 0.7s step-end infinite;
+  animation: blink 0.5s step-end infinite;
+  text-shadow: 0 0 7px var(--accent);
 }
 
 .bienvenida {
@@ -193,6 +217,12 @@ section {
 
 .soy:hover {
   color: var(--accent);
+}
+
+.highlight {
+  color: var(--accent);
+  text-shadow: 0 0 8px var(--accent);
+  font-weight: 500;
 }
 
 .imagen {
@@ -265,9 +295,10 @@ section {
   text-align: center;
   width: 320px;
   min-width: 220px;
-  border: 1px solid var(--text-light);
+  border: 1px solid rgba(0, 255, 65, 0.15);
   border-radius: var(--radius-lg);
   padding: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
@@ -327,7 +358,7 @@ footer {
   padding: 14px 28px;
   font-size: 20px;
   font-family: inherit;
-  box-shadow: 0 2px 8px rgba(76, 188, 25, 0.2);
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.25);
   cursor: pointer;
   transition: background var(--transition), color var(--transition);
   display: none;
