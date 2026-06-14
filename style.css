@@ -100,7 +100,6 @@ header {
 
 .navbar a:hover {
   color: var(--accent);
-  text-decoration: underline;
 }
 
 .hamburger {
