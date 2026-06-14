@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Imagenes/Final.ico">
     <link rel="stylesheet" href="style.css">
-    <script src="funciones.js"></script>
+    <script src="funciones.js" defer></script>
     <title>Andrés Montes</title>
 </head>
 
 <body>
     <header class="header">
         <nav class="navbar">
-            <ul>
+            <button class="hamburger" id="hamburger-btn" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <!-- <li><a href="#aptitudes">Aptitudes</a></li>
-                <li><a href="#formacion">Formación</a></li> -->
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -23,36 +26,43 @@
     </header>
 
     <section class="inicio">
+        <div class="particles">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
         <div class="text-inicio">
-            <p class="hola-mundo" >Hola mundo!</p>
-            <p class="bienvenida">Bienvenidos a mi portfolio 📚</p>
-            <p class="soy">Soy Andrés Montes developer .NET</p>
+            <p class="hola-mundo reveal typing-cursor" id="typing-text"></p>
+            <p class="bienvenida reveal reveal-delay-1">Bienvenidos a mi portfolio 📚</p>
+            <p class="soy reveal reveal-delay-2">Soy Andrés Montes developer .NET</p>
         </div>
         <div>
-            <img class="imagen" src="https://img.freepik.com/vector-gratis/lindo-zorro-sentado-corbata-dibujos-animados-vector-icono-ilustracion-animal-negocio-icono-concepto-aislado_138676-9065.jpg" alt="Ilustración de zorro con corbata, avatar de Andy Montes">
+            <img class="imagen reveal-scale reveal-delay-3" src="https://img.freepik.com/vector-gratis/lindo-zorro-sentado-corbata-dibujos-animados-vector-icono-ilustracion-animal-negocio-icono-concepto-aislado_138676-9065.jpg" alt="Ilustración de zorro con corbata, avatar de Andy Montes">
         </div>
     </section>
 
     <section class="sobre-mi" id="sobre-mi">
-        <div class="mi-espacio">
+        <div class="mi-espacio reveal-left">
             <h1>Sobre mí</h1>
             <p class="mi-text">Hola, soy Andrés. Me considero un apasionado del desarrollo y la tecnología. <br>Actualmente trabajo en sistemas como soporte funcional y analista de aplicaciones.  <br> Me recibí como tecnico universitario en programación en la UTN y tambien realicé varios cursos extra. <br> Me formé en la facultad aprendiendo con C, Python y Java, <br> sin embargo trabajo con el ecosistema Microsoft y me estoy orientando a .NET. <br> En mi tiempo libre me gusta jugar videojuegos de estrategia, hacer deporte y tambien soy musico!  </p>
         </div>
 
-        <div class="mi-espacio" id="aptitudes">
+        <div class="mi-espacio reveal-right" id="aptitudes">
             <h1>Mi Stack</h1>
             <div>
-                <img src="https://images.icon-icons.com/2415/PNG/512/c_plain_logo_icon_146610.png" class="stack" alt="Logo de lenguaje C">
-                <img src="https://images.icon-icons.com/2415/PNG/512/csharp_plain_logo_icon_146577.png" class="stack" alt="Logo de lenguaje C#">
-                <img src="https://img.icons8.com/?size=512&id=laYYF3dV0Iew&format=png" class="stack" alt="Logo de Python">
-                <img src="https://swimburger.net/media/ppnn3pcl/azure.png" class="stack" alt="Logo de Microsoft Azure">
-                <img src="https://logos-world.net/wp-content/uploads/2022/01/NET-Framework-Logo.png" class="stack" alt="Logo de .NET">
-                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" class="stack" alt="Logo de Docker">
-                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png" class="stack" alt="Logo de Postman">
+                <img loading="lazy" src="https://images.icon-icons.com/2415/PNG/512/c_plain_logo_icon_146610.png" class="stack" alt="Logo de lenguaje C">
+                <img loading="lazy" src="https://images.icon-icons.com/2415/PNG/512/csharp_plain_logo_icon_146577.png" class="stack" alt="Logo de lenguaje C#">
+                <img loading="lazy" src="https://img.icons8.com/?size=512&id=laYYF3dV0Iew&format=png" class="stack" alt="Logo de Python">
+                <img loading="lazy" src="https://swimburger.net/media/ppnn3pcl/azure.png" class="stack" alt="Logo de Microsoft Azure">
+                <img loading="lazy" src="https://logos-world.net/wp-content/uploads/2022/01/NET-Framework-Logo.png" class="stack" alt="Logo de .NET">
+                <img loading="lazy" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" class="stack" alt="Logo de Docker">
+                <img loading="lazy" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png" class="stack" alt="Logo de Postman">
             </div>
         </div>
 
-        <div class="mi-espacio" id="formacion">
+        <div class="mi-espacio reveal-left" id="formacion">
             <h1>Formación</h1>
             <ul class="mi-text">
                 <li>Tecnicatura Universitaria en Programación - UTN</li>
@@ -64,48 +74,55 @@
     </section>
 
     <section class="proyectos" id="proyectos">
+        <div class="particles-down">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
         <h1>Mis proyectos</h1>
         <div class="contenedor">
-            <a href="https://github.com/Andy94m/UTNFRSR-PPS-Semantic-Kernel-Rag.git" target="_blank" class="project">
+            <a href="https://github.com/Andy94m/UTNFRSR-PPS-Semantic-Kernel-Rag.git" target="_blank" class="project reveal">
                 <h2>Chat IA</h2>
-                <img src="https://i.imgur.com/4K0XWAI.png" class="proj-img" alt="Captura de pantalla de Chat IA">
+                <img loading="lazy" src="https://i.imgur.com/4K0XWAI.png" class="proj-img" alt="Captura de pantalla de Chat IA">
                 <p class="mi-text">Chatbot de inteligencia artificial. Permite subir documentos de texto y procesar consultas. Stack: C#, Blazor Server con SignalR, Docker, Ollama, Elastic Search. LLMS: Deepseek R1 y All-Minilm </p>
             </a>
-            <a href="https://github.com/Andy94m/tp-final-nivel3-Andres-Montes.git" target="_blank" class="project">
+            <a href="https://github.com/Andy94m/tp-final-nivel3-Andres-Montes.git" target="_blank" class="project reveal reveal-delay-1">
                 <h2>Inventario Web</h2>
-                <img src="https://i.imgur.com/7tSgy6c.png" class="proj-img" alt="Captura de pantalla de Gestión de inventario">
+                <img loading="lazy" src="https://i.imgur.com/7tSgy6c.png" class="proj-img" alt="Captura de pantalla de Gestión de inventario">
                 <p class="mi-text">Catalogo ASP.NET Web Forms. CRUD, búsquedas, filtrado, ordenamiento de elementos, logeo y EmailService. Stack: C#, ADO optimizado y Bootstrap.</p>
             </a>
-            <a href="https://github.com/Andy94m/Curso-C-Nivel-2/tree/main" target="_blank" class="project">
+            <a href="https://github.com/Andy94m/Curso-C-Nivel-2/tree/main" target="_blank" class="project reveal reveal-delay-2">
                 <h2>Gestión de inventario</h2>
-                <img src="https://i.imgur.com/jndhs8P.png" class="proj-img" alt="Captura de pantalla de Gestión de inventario">
+                <img loading="lazy" src="https://i.imgur.com/jndhs8P.png" class="proj-img" alt="Captura de pantalla de Gestión de inventario">
                 <p class="mi-text">Gestión de inventario en grilla. Contiene CRUD, búsquedas, filtrado y ordenamiento de elementos. También papelera de reciclaje. Hecho en WinForms y ADO .NET.</p>
             </a>
-            <a href="https://github.com/CodeSystem2022/ProyectoIntegradorFunkTheCode" target="_blank" class="project">
+            <a href="https://github.com/CodeSystem2022/ProyectoIntegradorFunkTheCode" target="_blank" class="project reveal reveal-delay-3">
                 <h2>Tienda ItuiPhone</h2>
-                <img src="https://i.imgur.com/1kC01Fb.png" class="proj-img" alt="Captura de pantalla de Tienda ItuiPhone">
+                <img loading="lazy" src="https://i.imgur.com/1kC01Fb.png" class="proj-img" alt="Captura de pantalla de Tienda ItuiPhone">
                 <p class="mi-text">Tienda en linea desarrollada como proyecto integrador Web en la UTN. <br> Stack: Javascript, CSS - Tailwind, NodeJS - Express y MongoDB </p>
             </a>
-            <a href="https://github.com/Andy94m/Autoclick" target="_blank" class="project">
+            <a href="https://github.com/Andy94m/Autoclick" target="_blank" class="project reveal reveal-delay-4">
                 <h2>Autoclick</h2>
-                <img src="https://i.imgur.com/DpFZ0wa.png" class="proj-img" alt="Captura de pantalla de Autoclick">
+                <img loading="lazy" src="https://i.imgur.com/DpFZ0wa.png" class="proj-img" alt="Captura de pantalla de Autoclick">
                 <p class="mi-text">Autoclick portable de escritorio. Perfecto para mantener servidores, VDI o accesos remotos en uso y evitar el cierre de sesión.</p>
             </a>
         </div>
     </section>
 
-    <footer id="contacto">
+    <footer id="contacto" class="reveal">
         <h1>Contactame</h1>
         <p class="mi-text">m.andresmontes@gmail.com  -  andresmontes.m@outlook.es</p>
         <div class="contacto">
             <a href="https://www.linkedin.com/in/andres-montes-32602019a/" target="_blank">
-                <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-linkedin-icon-png-image_3547995.jpg" class="social" alt="LinkedIn de Andrés Montes">
+                <img loading="lazy" src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-linkedin-icon-png-image_3547995.jpg" class="social" alt="LinkedIn de Andrés Montes">
             </a><hr>
             <a href="https://andy94m.github.io/Portfolio/" target="_blank">
-                <img src="https://pngdownload.io/wp-content/uploads/2023/12/X-Logo-Twitter-Logo-Iconic-Social-Media-Brand-Symbol-PNG-Transparent-Recognizable-Emblem-jpg.webp" class="social" alt="Perfil X (Twitter) de Andrés Montes">
+                <img loading="lazy" src="https://pngdownload.io/wp-content/uploads/2023/12/X-Logo-Twitter-Logo-Iconic-Social-Media-Brand-Symbol-PNG-Transparent-Recognizable-Emblem-jpg.webp" class="social" alt="Perfil X (Twitter) de Andrés Montes">
             </a><hr>
             <a href="https://github.com/Andy94m" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="social" alt="GitHub de Andrés Montes">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="social" alt="GitHub de Andrés Montes">
             </a>
         </div>
         <button id="toTopBtn" title="Volver arriba">⬆ Volver arriba</button>
